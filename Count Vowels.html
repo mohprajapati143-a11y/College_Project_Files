@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Count Vowels</title>
+</head>
+<body>
+  <script>
+    let str = prompt("Enter a string:");
+    let vowels = str.match(/[aeiouAEIOU]/g);
+    let count = vowels ? vowels.length : 0;
+    alert("Number of vowels: " + count);
+  </script>
+</body>
+</html>

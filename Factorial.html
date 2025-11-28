@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Factorial</title>
+</head>
+<body>
+  <h2>Factorial of a Number</h2>
+  <input type="number" id="factInput" placeholder="Enter a number">
+  <button onclick="calculateFactorial()">Calculate</button>
+  <p id="factOutput"></p>
+
+  <script>
+    function calculateFactorial() {
+      let n = parseInt(document.getElementById("factInput").value);
+      let result = 1;
+      for (let i = 2; i <= n; i++) result *= i;
+      document.getElementById("factOutput").innerText = n + "! = " + result;
+    }
+  </script>
+</body>
+</html>

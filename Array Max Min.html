@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Max Min</title>
+</head>
+<body>
+  <h2>Array Maximum and Minimum</h2>
+  <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas">
+  <button onclick="findMaxMin()">Find</button>
+  <p id="arrayOutput"></p>
+
+  <script>
+    function findMaxMin() {
+      let arr = document.getElementById("arrayInput").value.split(",").map(Number);
+      let max = Math.max(...arr);
+      let min = Math.min(...arr);
+      document.getElementById("arrayOutput").innerText = "Max: " + max + ", Min: " + min;
+    }
+  </script>
+</body>
+</html>
