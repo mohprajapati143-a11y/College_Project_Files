@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Map Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fefce8;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #b45309;
+        }
+
+        .map-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Map Example</h1>
+
+    <div class="map-container">
+        <img src="C:\Users\Mohit\Pictures\f.png"
+             alt="Image Map"
+             usemap="#mymap">
+
+        <map name="mymap">
+            <!-- Rectangle area -->
+            <area shape="rect" coords="20,20,180,120" href="#" alt="Section 1">
+
+            <!-- Circle area -->
+            <area shape="circle" coords="300,150,60" href="#" alt="Section 2">
+
+            <!-- Polygon area -->
+            <area shape="poly" coords="420,40,580,40,580,200,420,200" href="#" alt="Section 3">
+        </map>
+    </div>
+
+</body>
+</html>

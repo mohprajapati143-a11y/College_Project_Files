@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Marks Table</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            padding: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 2px solid #1e3a8a;
+            padding: 12px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        th {
+            background: #1e3a8a;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #e0e7ff;
+        }
+
+        .average-row td {
+            font-weight: bold;
+            background: #fef3c7;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Marks Table</h2>
+
+    <table>
+        <tr>
+            <th>NAME</th>
+            <th>SUBJECT</th>
+            <th>MARKS</th>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Advanced Web</td>
+            <td>75</td>
+        </tr>
+
+        <tr>
+            <td>Hillary</td>
+            <td>Operating System</td>
+            <td>60</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Advanced Web</td>
+            <td>80</td>
+        </tr>
+
+        <tr>
+            <td>Lary</td>
+            <td>Operating System</td>
+            <td>75</td>
+        </tr>
+
+        <tr class="average-row">
+            <td colspan="3">Total Average: 72.5</td>
+        </tr>
+    </table>
+
+</body>
+</html>

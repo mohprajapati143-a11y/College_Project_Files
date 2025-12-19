@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image as a Hyperlink</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        .clickable-image {
+            width: 300px;      /* Control image size */
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .clickable-image:hover {
+            opacity: 0.8;      /* Hover effect */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image as a Hyperlink Example</h1>
+
+    <!-- Image wrapped inside a hyperlink -->
+    <a href="https://www.example.com" target="_blank">
+        <img src="C:\Users\Mohit\Pictures\Screenshots\Screenshot 2025-12-18 194900.png"
+             alt="Clickable Image"
+             class="clickable-image">
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styles for Nested Tags</title>
+
+    <style>
+        /* Style for the outer container */
+        .outer-box {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            color: #f1f5f9;
+            width: 60%;
+            margin: 40px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for nested heading inside outer-box */
+        .outer-box h2 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        /* Style for nested paragraph inside outer-box */
+        .outer-box p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        /* Style for nested span inside paragraph */
+        .outer-box p span {
+            color: #facc15;
+            font-weight: bold;
+        }
+
+        /* Style for nested list inside outer-box */
+        .outer-box ul li {
+            color: #a5f3fc;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="outer-box">
+        <h2>Nested Tag Styling Example</h2>
+
+        <p>
+            This is a paragraph inside the outer box.  
+            Notice how the <span>nested span tag</span> has its own style.
+        </p>
+
+        <ul>
+            <li>First nested list item</li>
+            <li>Second nested list item</li>
+            <li>Third nested list item</li>
+        </ul>
+    </div>
+
+</body>
+</html>

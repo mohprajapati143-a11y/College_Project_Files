@@ -15,6 +15,7 @@ print("\n Element in the array:")
 for element in array_1d:
     print(element)
 
-print("MOHIT PRAJAPATI")
+print("\nMOHIT PRAJAPATI")
 print("FYCS")
 print("22549")
+

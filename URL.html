@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Redirecting to Other Content</title>
+
+    <!-- META redirect (after 5 seconds) -->
+    <!-- Change "other-content.html" to your actual target URL -->
+    <meta http-equiv="refresh" content="5; url=other-content.html" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111827;
+            color: #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px 30px;
+            border-radius: 8px;
+            background: #1f2937;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        p {
+            margin: 6px 0;
+            font-size: 14px;
+            color: #d1d5db;
+        }
+        a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .timer {
+            font-weight: bold;
+            color: #facc15;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redirecting to Other Content...</h1>
+        <p>You will be redirected automatically in <span class="timer" id="seconds">5</span> seconds.</p>
+        <p>If you are not redirected, click here:</p>
+        <p><a href="Nagivation.html">Go to Other Content</a></p>
+    </div>
+
+    <script>
+        // Change this to your target URL
+        const targetUrl = "Nagivation.html";
+
+        // JavaScript redirect after 5 seconds (fallback or in case META is blocked)
+        setTimeout(function () {
+            window.location.href = targetUrl;
+        }, 5000);
+
+        // Optional: show countdown
+        let remaining = 5;
+        const secondsSpan = document.getElementById("seconds");
+
+        const countdown = setInterval(function () {
+            remaining--;
+            if (remaining <= 0) {
+                clearInterval(countdown);
+            }
+            if (secondsSpan) {
+                secondsSpan.textContent = remaining;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

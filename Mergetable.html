@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merged Cells Table</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+            background: #ffffff;
+        }
+
+        th, td {
+            border: 2px solid #1e3a8a;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        th {
+            background: #1e3a8a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Merged Cells Table Example</h1>
+
+    <table>
+        <tr>
+            <th rowspan="2">Day</th>
+            <th colspan="2">Schedule</th>
+        </tr>
+        <tr>
+            <th>Morning</th>
+            <th>Afternoon</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td>Math</td>
+            <td>Science</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="2">Project Work</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Wednesday</td>
+            <td>English</td>
+            <td>History</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Sports Activities</td>
+        </tr>
+    </table>
+
+</body>
+</html>
