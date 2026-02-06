@@ -17,3 +17,4 @@ if __name__ == "__main__":
     print("Before sorting:", arr)
     arr = selection_sort(arr)
     print("After sorting:", arr)
+    
